@@ -3,7 +3,8 @@
 from datetime import datetime
 from decimal import Decimal
 from typing import Optional
-from sqlmodel import SQLModel, Field, Relationship
+from sqlmodel import SQLModel, Field, Relationship, Column
+from sqlalchemy import Numeric
 
 
 # Database Models
@@ -27,7 +28,7 @@ class Product(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str = Field(index=True, max_length=255)
     description: Optional[str] = Field(default=None)
-    price: Decimal = Field(max_digits=10, decimal_places=2)
+    price: Decimal = Field(sa_column=Column(Numeric(precision=10, scale=2)))
     category_id: Optional[int] = Field(default=None, foreign_key="categories.id")
     image_url: Optional[str] = Field(default=None, max_length=500)
     stock_quantity: int = Field(default=0)

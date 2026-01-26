@@ -3,7 +3,8 @@
 from datetime import datetime
 from decimal import Decimal
 from typing import Optional
-from sqlmodel import SQLModel, Field, Relationship
+from sqlmodel import SQLModel, Field, Relationship, Column
+from sqlalchemy import Numeric
 
 
 # Database Models
@@ -28,7 +29,7 @@ class CartItem(SQLModel, table=True):
     cart_id: int = Field(foreign_key="carts.id", index=True)
     product_id: int = Field(index=True)
     quantity: int = Field(default=1, ge=1)
-    price: Decimal = Field(max_digits=10, decimal_places=2)
+    price: Decimal = Field(sa_column=Column(Numeric(precision=10, scale=2)))
 
     # Relationships
     cart: Optional[Cart] = Relationship(back_populates="items")
@@ -41,7 +42,7 @@ class Order(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     user_id: int = Field(index=True)
     status: str = Field(default="pending", max_length=50, index=True)
-    total_amount: Decimal = Field(max_digits=10, decimal_places=2)
+    total_amount: Decimal = Field(sa_column=Column(Numeric(precision=10, scale=2)))
     shipping_address: str
     payment_status: str = Field(default="pending", max_length=50)
     created_at: datetime = Field(default_factory=datetime.utcnow)
@@ -60,7 +61,7 @@ class OrderItem(SQLModel, table=True):
     product_id: int = Field(index=True)
     product_name: str = Field(max_length=255)
     quantity: int = Field(ge=1)
-    price: Decimal = Field(max_digits=10, decimal_places=2)
+    price: Decimal = Field(sa_column=Column(Numeric(precision=10, scale=2)))
 
     # Relationships
     order: Optional[Order] = Relationship(back_populates="items")
