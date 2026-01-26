@@ -1,23 +1,15 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { useSearchParams } from 'next/navigation'
-import { productAPI } from '@/lib/api'
-import ProductCard from '@/components/ProductCard'
+import { useState, useMemo } from "react";
+import ProductCard from "@/components/ProductCard";
+import { PRODUCTS, CATEGORIES } from "@/lib/products";
+import { Search, Filter } from "lucide-react";
 
-interface Product {
-  id: number
-  name: string
-  description?: string
-  price: number
-  image_url?: string
-  stock_quantity: number
-}
-
-interface Category {
-  id: number
-  name: string
-}
+export default function ProductsPage() {
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 10000]);
+  const [sortBy, setSortBy] = useState<"price-low" | "price-high" | "newest" | "rating">("newest");
 
 export default function ProductsPage() {
   const searchParams = useSearchParams()
