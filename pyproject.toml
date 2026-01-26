@@ -1,0 +1,13 @@
+[project]
+name = "fatima-zehra-boutique-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chatkit>=0.0.1",
+    "fastapi[standared]>=0.128.0",
+    "graphviz>=0.21",
+    "openai>=2.15.0",
+    "uvicorn>=0.40.0",
+]
