@@ -61,21 +61,25 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="text-gray-700 hover:text-pink-600 transition"
+                  className="text-gray-700 hover:text-pink-600 transition text-sm font-medium"
                 >
-                  👤 {user.full_name || user.email}
+                  👤 {user.full_name?.split(' ')[0] || user.email.split('@')[0]}
                 </button>
                 {isOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2">
-                    <Link href="/profile" className="block px-4 py-2 hover:bg-gray-100">
-                      Profile
+                  <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+                    <div className="px-4 py-2 border-b text-sm text-gray-600">
+                      {user.email}
+                    </div>
+                    <Link href="/profile" className="block px-4 py-2 hover:bg-gray-100 text-gray-700">
+                      👤 My Profile
                     </Link>
-                    <Link href="/orders" className="block px-4 py-2 hover:bg-gray-100">
-                      Orders
+                    <Link href="/orders" className="block px-4 py-2 hover:bg-gray-100 text-gray-700">
+                      📦 My Orders
                     </Link>
+                    <div className="border-t my-1"></div>
                     <button
                       onClick={handleLogout}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100 text-red-600"
+                      className="w-full text-left px-4 py-2 hover:bg-red-50 text-red-600 font-medium"
                     >
                       Logout
                     </button>
