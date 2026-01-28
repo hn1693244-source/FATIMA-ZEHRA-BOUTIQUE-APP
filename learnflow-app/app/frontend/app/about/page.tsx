@@ -39,10 +39,11 @@ export default function AboutPage() {
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1595777712802-12f81c0e6b71?w=500&h=600&fit=crop"
+              src="/images/about-hero.jpg"
               alt="Elegant Ladies Suit - Fatima Zehra Boutique"
-              fill
-              className="object-cover"
+              width={500}
+              height={600}
+              className="object-cover rounded-lg"
               priority
             />
           </div>
