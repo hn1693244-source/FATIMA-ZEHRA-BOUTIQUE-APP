@@ -27,7 +27,8 @@ export default function ProfilePage() {
       }
 
       try {
-        const response = await userAPI.getProfile()
+        const token = auth.getToken()
+        const response = await userAPI.getProfile(token || "")
         const userData = response.data
         setUser(userData)
         setFormData({
@@ -51,7 +52,8 @@ export default function ProfilePage() {
     setMessage('')
 
     try {
-      const response = await userAPI.updateProfile(formData)
+      const token = auth.getToken()
+      const response = await userAPI.updateProfile(token || "", formData)
       const updatedUser = response.data
       setUser(updatedUser)
       auth.setUser(updatedUser)

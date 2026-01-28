@@ -1,15 +1,19 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-pink-100 to-purple-100 py-16">
+      <div className="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 py-24">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-serif font-bold mb-4">
-            Fatima Zehra Boutique
+          <h1 className="text-7xl md:text-8xl font-serif font-bold mb-6 text-white drop-shadow-lg">
+            Fatima Zehra <br />
+            <span className="bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text text-transparent">
+              Boutique
+            </span>
           </h1>
-          <p className="text-2xl text-gray-700">
+          <p className="text-2xl md:text-3xl text-white font-light drop-shadow">
             Elegant Fashion for Every Occasion
           </p>
         </div>
@@ -33,8 +37,14 @@ export default function AboutPage() {
               on every occasion.
             </p>
           </div>
-          <div className="bg-gradient-to-br from-pink-200 to-purple-200 rounded-lg h-96 flex items-center justify-center text-gray-400">
-            Featured Image
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <Image
+              src="https://images.unsplash.com/photo-1595777712802-12f81c0e6b71?w=500&h=600&fit=crop"
+              alt="Elegant Ladies Suit - Fatima Zehra Boutique"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
 

@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "Fatima Zehra Boutique - Elegant Fashion",
   description: "Discover elegant fashion for every occasion at Fatima Zehra Boutique",
   keywords: "fashion, boutique, dresses, elegant, luxury",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
+  themeColor: "#1e40af",
 }
 
 export default function RootLayout({
@@ -17,9 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+      <head></head>
       <body className="bg-white dark:bg-slate-950">
         <Navbar />
         <main className="min-h-screen">

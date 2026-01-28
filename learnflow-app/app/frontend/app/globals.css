@@ -611,6 +611,19 @@
    SPECIAL EFFECTS
    ============================================ */
 
+/* Premium Border Styles */
+.border-premium {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #ec4899, #a855f7) border-box;
+  border: 2px solid transparent;
+}
+
+.dark .border-premium {
+  background: linear-gradient(theme('colors.slate.800'), theme('colors.slate.800')) padding-box,
+              linear-gradient(135deg, #ec4899, #a855f7) border-box;
+  border: 2px solid transparent;
+}
+
 /* Gradient Border */
 .gradient-border {
   position: relative;
@@ -622,6 +635,36 @@
 .dark .gradient-border {
   background: linear-gradient(theme('colors.gray.800'), theme('colors.gray.800')) padding-box,
               linear-gradient(135deg, #EC4899, #9333EA, #F59E0B) border-box;
+}
+
+/* Elegant Borders */
+.border-elegant {
+  @apply border-2 border-pink-200 dark:border-pink-800/50;
+}
+
+.border-elegant-purple {
+  @apply border-2 border-purple-200 dark:border-purple-800/50;
+}
+
+.border-subtle {
+  @apply border border-slate-200 dark:border-slate-700/50;
+}
+
+.border-solid-pink {
+  @apply border-2 border-pink-500;
+}
+
+.border-solid-purple {
+  @apply border-2 border-purple-500;
+}
+
+/* Card Borders */
+.card-border {
+  @apply rounded-xl border-2 border-slate-100 dark:border-slate-700/30 shadow-sm;
+}
+
+.card-border-pink {
+  @apply rounded-xl border-2 border-pink-200 dark:border-pink-800/30 shadow-sm;
 }
 
 /* Shimmer Background */

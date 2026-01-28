@@ -22,7 +22,7 @@ export default function CartPage() {
 
       try {
         const response = await orderAPI.getCart()
-        setCart(response.data.items, response.data.total_amount)
+        setCart(response.data.items || response.data)
       } catch (error) {
         console.error('Failed to fetch cart:', error)
       } finally {

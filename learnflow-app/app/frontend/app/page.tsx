@@ -3,15 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
-import { CATEGORIES, PRODUCTS, getProductsByCategory } from "@/lib/products";
+import { CATEGORIES, getProductsByCategory } from "@/lib/products";
 import { ArrowRight, Heart, Truck, Shield } from "lucide-react";
-import { useState } from "react";
 
 export default function HomePage() {
-  const [cart, setCart] = useState<any[]>([]);
-
   const handleAddToCart = (product: any) => {
-    setCart((prev) => [...prev, product]);
     alert(`${product.name} added to cart!`);
   };
 
@@ -77,11 +73,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="relative h-96 md:h-full min-h-[500px] animate-fade-in-right">
+            <div className="relative h-96 md:h-full min-h-[600px] animate-fade-in-right">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-amber-500/10 rounded-3xl"></div>
               <Image
-                src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=800&fit=crop"
-                alt="Fatima Zehra Boutique"
+                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=700&h=900&fit=crop&crop=faces"
+                alt="Fatima Zehra Boutique - Ladies Fashion Suit"
                 fill
                 className="object-cover rounded-3xl shadow-2xl"
                 priority
@@ -105,7 +101,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {CATEGORIES.map((category, index) => (
+            {CATEGORIES.map((category) => (
               <Link key={category.id} href={`/products?category=${category.name}`}>
                 <div className="group card-hover p-8 rounded-2xl text-center cursor-pointer border-2 border-transparent hover:border-pink-500 transition-all">
                   <div className="text-6xl mb-4 transform group-hover:scale-125 transition-transform duration-300">

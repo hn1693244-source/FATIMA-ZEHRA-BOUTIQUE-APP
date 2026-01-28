@@ -40,8 +40,9 @@ export default function OrdersPage() {
       }
 
       try {
-        const response = await orderAPI.listOrders()
-        setOrders(response.data)
+        const token = auth.getToken()
+        const response = await orderAPI.getOrders(token || "")
+        setOrders(response.data || response)
       } catch (error) {
         console.error('Failed to fetch orders:', error)
       } finally {

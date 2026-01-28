@@ -26,19 +26,19 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "./*"
       ],
       "@/components/*": [
-        "./src/components/*"
+        "./components/*"
       ],
       "@/lib/*": [
-        "./src/lib/*"
+        "./lib/*"
       ],
-      "@/pages/*": [
-        "./src/pages/*"
+      "@/app/*": [
+        "./app/*"
       ],
       "@/types/*": [
-        "./src/types/*"
+        "./types/*"
       ]
     },
     "allowJs": true,
