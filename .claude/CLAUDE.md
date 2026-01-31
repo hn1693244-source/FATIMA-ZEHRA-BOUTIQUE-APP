@@ -20,6 +20,32 @@
 
 ---
 
+## 📊 Implementation Status (Updated 2026-01-31)
+
+**Legend**: ✅ = Complete & Tested | ⚠️ = Partial | ❌ = Not Implemented | 🔜 = Planned
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| **Frontend (Next.js 16)** | ✅ | Static export, 40 products, responsive UI |
+| **Docker Compose** | ✅ | Fully working, verified |
+| **User Service (FastAPI)** | ✅ | Auth, JWT, profiles |
+| **Product Service (FastAPI)** | ✅ | Catalog, search, filtering |
+| **Order Service (FastAPI)** | ✅ | Cart, checkout, orders |
+| **PostgreSQL Database** | ✅ | Neon cloud-ready, schema complete |
+| **Kubernetes Manifests** | ⚠️ | Deployments, services, configmaps exist; not tested |
+| **Helm Charts** | ❌ | Not implemented (planned Phase 2) |
+| **Minikube Setup** | ❌ | Not implemented (planned Phase 2) |
+| **GitHub Actions CI/CD** | ⚠️ | Basic workflow; pre-commit hooks pending |
+| **AI Chat Integration** | ⚠️ | OpenAI default; Gemini/Goose templates exist |
+| **Browser Automation Tests** | 🔜 | Infrastructure ready (55 scenarios); not executed |
+| **Zero-Config Quickstart** | 🔜 | Planned Phase 1 |
+| **Verification Scripts** | 🔜 | Planned Phase 1 |
+| **LLM Usage Guide** | 🔜 | Planned Phase 1 |
+
+**Reusability Score**: 6.5/10 → 9.5/10 (Target after Phase 1)
+
+---
+
 ## 📦 What's Inside This Folder
 
 ```
@@ -36,9 +62,9 @@ learnflow-app/                          ← COMPLETE APP (copy anywhere, works)
 ├── deploy/                             ← DEPLOYMENT FLEXIBILITY
 │   ├── docker/                         ✅ Single command: docker-compose up
 │   ├── kubernetes/                     ✅ K8s manifests (production)
-│   ├── helm/                           ✅ Helm charts (cloud deployment)
-│   ├── minikube/                       ✅ Local K8s for development
-│   └── scripts/                        ✅ Automated deploy scripts
+│   ├── helm/                           ❌ Not implemented (see notes)
+│   ├── minikube/                       ❌ Not implemented (see notes)
+│   └── scripts/                        ⚠️ Partial (see Implementation Status)
 │
 ├── ai-integrations/                    ← PLUG-AND-PLAY AI MODELS
 │   ├── openai/                         ✅ OpenAI API (gpt-4o)
@@ -164,13 +190,13 @@ docker-compose up -d
 - [x] Streaming responses
 - [x] Pluggable AI models
 
-### Priority 3 (Deployment) ✅
+### Priority 3 (Deployment) ⚠️
 - [x] Docker Compose (local dev)
 - [x] Kubernetes manifests (cloud)
-- [x] Helm charts (cloud deployment)
-- [x] Minikube setup (local K8s)
-- [x] GitHub Actions CI/CD
-- [x] Production deployment scripts
+- [ ] Helm charts (cloud deployment) - Planned for Phase 2
+- [ ] Minikube setup (local K8s) - Planned for Phase 2
+- [x] GitHub Actions CI/CD (basic workflow)
+- [x] Production deployment scripts (partial)
 
 ---
 
@@ -204,19 +230,14 @@ kubectl apply -f .
 # Check: kubectl get pods
 ```
 
-### Option 3: Helm (Cloud - 3 Minutes)
-```bash
-cd learnflow-app/deploy/helm
-helm install learnflow ./learnflow-chart
-# Check: helm list
-```
+### Option 3: Kubernetes (Production - See Option 2)
+**Note**: Helm and Minikube setups are not yet implemented. Use Docker (Option 1) or Kubernetes manifests (Option 2) for now.
 
-### Option 4: Minikube (Local K8s - 5 Minutes)
-```bash
-cd learnflow-app/deploy/minikube
-./setup.sh
-# Local K8s cluster running
-```
+### Option 4: Helm (Cloud - Not Yet Implemented)
+**Status**: Planned for Phase 2
+- Not currently available in `deploy/helm/`
+- Use Kubernetes manifests (Option 2) as alternative
+- Coming soon with complete cloud deployment templates
 
 ### Option 5: Manual (Linux/Mac - 10 Minutes)
 ```bash
@@ -481,8 +502,8 @@ See **docs/TROUBLESHOOTING.md** for more issues.
 
 ✅ Docker Compose (local development)
 ✅ Kubernetes manifests (production)
-✅ Helm charts (cloud deployment)
-✅ Minikube setup (local K8s)
+⚠️ Helm charts (planned for Phase 2)
+⚠️ Minikube setup (planned for Phase 2)
 ✅ GitHub Actions CI/CD
 ✅ API documentation (Swagger)
 ✅ Database migrations
@@ -553,9 +574,9 @@ kubectl apply -f deploy/kubernetes/     # Deploy to K8s
 kubectl get pods                        # Check pods
 kubectl logs -f deployment/user-service # View logs
 
-# Helm
-helm install learnflow deploy/helm/learnflow-chart
-helm upgrade learnflow deploy/helm/learnflow-chart
+# Helm (Not yet implemented - coming Phase 2)
+# helm install learnflow deploy/helm/learnflow-chart
+# For now, use Kubernetes manifests above
 ```
 
 ---
