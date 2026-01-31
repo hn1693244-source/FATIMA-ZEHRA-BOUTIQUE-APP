@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[59096,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"ViewportBoundary"]
+3:I[59096,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[59167,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"IconMark"]
+0:{"buildId":"BUndess_Sg25aH4xxRxL3","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Fatima Zehra Boutique - Elegant Fashion"}],["$","meta","1",{"name":"description","content":"Discover elegant fashion for every occasion at Fatima Zehra Boutique"}],["$","meta","2",{"name":"keywords","content":"fashion, boutique, dresses, elegant, luxury"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","link","4",{"rel":"apple-touch-icon","href":"/favicon.svg"}],["$","$L5","5",{}]]}]}]}],null]}],"loading":null,"isPartial":false}

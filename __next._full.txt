@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+2:I[7517,["/_next/static/chunks/a26611b3979b8437.js"],"default"]
+3:I[78548,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"default"]
+4:I[20995,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"default"]
+5:I[9089,["/_next/static/chunks/a26611b3979b8437.js"],""]
+6:I[23865,["/_next/static/chunks/a26611b3979b8437.js"],"default"]
+7:I[21744,["/_next/static/chunks/a26611b3979b8437.js"],"default"]
+8:I[19981,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"ClientPageRoot"]
+9:I[33395,["/_next/static/chunks/a26611b3979b8437.js","/_next/static/chunks/001d2b6eccdd8886.js"],"default"]
+c:I[59096,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[59096,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"ViewportBoundary"]
+11:I[59096,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"MetadataBoundary"]
+13:I[66466,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"default"]
+:HL["/_next/static/chunks/f1b82929f87a1617.css","style"]
+0:{"P":null,"b":"BUndess_Sg25aH4xxRxL3","c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/f1b82929f87a1617.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/a26611b3979b8437.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{}],["$","body",null,{"className":"bg-white dark:bg-slate-950","children":[["$","$L2",null,{}],["$","main",null,{"className":"min-h-screen","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-gray-50 flex items-center justify-center","children":["$","div",null,{"className":"text-center","children":[["$","h1",null,{"className":"text-6xl font-serif font-bold mb-4","children":"404"}],["$","p",null,{"className":"text-2xl text-gray-600 mb-8","children":"Page Not Found"}],["$","p",null,{"className":"text-gray-600 mb-8","children":"Sorry, the page you're looking for doesn't exist."}],["$","$L5",null,{"href":"/","className":"inline-block bg-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-700 transition","children":"Back to Home"}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L6",null,{}],["$","$L7",null,{}]]}]]}]]}],{"children":[["$","$1","c",{"children":[["$","$L8",null,{"Component":"$9","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@a","$@b"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/001d2b6eccdd8886.js","async":true,"nonce":"$undefined"}]],["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}],{},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],null]}],false]],"m":"$undefined","G":["$13",[]],"S":true}
+a:{}
+b:"$0:f:0:1:1:children:0:props:children:0:props:serverProvidedParams:params"
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[59167,["/_next/static/chunks/77da684a545d5259.js","/_next/static/chunks/5157baac2c21aeec.js"],"IconMark"]
+e:null
+12:[["$","title","0",{"children":"Fatima Zehra Boutique - Elegant Fashion"}],["$","meta","1",{"name":"description","content":"Discover elegant fashion for every occasion at Fatima Zehra Boutique"}],["$","meta","2",{"name":"keywords","content":"fashion, boutique, dresses, elegant, luxury"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","link","4",{"rel":"apple-touch-icon","href":"/favicon.svg"}],["$","$L14","5",{}]]
